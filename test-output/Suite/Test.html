@@ -1,0 +1,490 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>82/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Aug 13 13:01:11 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>271 seconds (271149 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.CheckoutOverviewTest.verifyProductName()'><b>verifyProductName</b><br>Test class: testCases.CheckoutOverviewTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.CheckoutOverviewTest@37271612</td></tr>
+<tr>
+<td title='testCases.ProductsTest.verifyCartIconDisplayed()'><b>verifyCartIconDisplayed</b><br>Test class: testCases.ProductsTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.ProductsTest@3af9c5b7</td></tr>
+<tr>
+<td title='testCases.FooterTest.verifyFacebookLink()'><b>verifyFacebookLink</b><br>Test class: testCases.FooterTest</td>
+<td></td>
+<td>3</td>
+<td>testCases.FooterTest@4e3958e7</td></tr>
+<tr>
+<td title='testCases.CheckoutInformationTest.verifyCheckoutInformation()'><b>verifyCheckoutInformation</b><br>Test class: testCases.CheckoutInformationTest<br>Parameters: 2, , Rajan, 695001, Error: First Name is required</td>
+<td></td>
+<td>0</td>
+<td>testCases.CheckoutInformationTest@77f80c04</td></tr>
+<tr>
+<td title='testCases.CheckoutCompleteTest.verifyOrderConfirmationMessage()'><b>verifyOrderConfirmationMessage</b><br>Test class: testCases.CheckoutCompleteTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.CheckoutCompleteTest@38102d01</td></tr>
+<tr>
+<td title='testCases.CartTest.verifyProductPrice()'><b>verifyProductPrice</b><br>Test class: testCases.CartTest<br>Parameters: 1, Sauce Labs Backpack, $29.99, 1, SUCCESS</td>
+<td></td>
+<td>0</td>
+<td>testCases.CartTest@24aed80c</td></tr>
+<tr>
+<td title='testCases.CartTest.verifyRemoveProduct()'><b>verifyRemoveProduct</b><br>Test class: testCases.CartTest<br>Parameters: 1, Sauce Labs Backpack, $29.99, 1, SUCCESS</td>
+<td></td>
+<td>11</td>
+<td>testCases.CartTest@24aed80c</td></tr>
+<tr>
+<td title='testCases.CheckoutOverviewTest.verifyCheckoutOverviewPage()'><b>verifyCheckoutOverviewPage</b><br>Test class: testCases.CheckoutOverviewTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.CheckoutOverviewTest@37271612</td></tr>
+<tr>
+<td title='testCases.CheckoutOverviewTest.verifyTotalDisplayed()'><b>verifyTotalDisplayed</b><br>Test class: testCases.CheckoutOverviewTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.CheckoutOverviewTest@37271612</td></tr>
+<tr>
+<td title='testCases.CartTest.verifyProductPrice()'><b>verifyProductPrice</b><br>Test class: testCases.CartTest<br>Parameters: 6, Test.allTheThings() T-Shirt (Red), $15.99, 1, SUCCESS</td>
+<td></td>
+<td>0</td>
+<td>testCases.CartTest@24aed80c</td></tr>
+<tr>
+<td title='testCases.LoginPageTest.verifyLogin()'><b>verifyLogin</b><br>Test class: testCases.LoginPageTest<br>Parameters: 3, , secret_sauce, Epic sadface: Username is required</td>
+<td></td>
+<td>0</td>
+<td>testCases.LoginPageTest@6ab778a</td></tr>
+<tr>
+<td title='testCases.LoginPageTest.verifyUsernameFieldAcceptsInput()'><b>verifyUsernameFieldAcceptsInput</b><br>Test class: testCases.LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.LoginPageTest@6ab778a</td></tr>
+<tr>
+<td title='testCases.ProductsTest.verifyProductSorting()'><b>verifyProductSorting</b><br>Test class: testCases.ProductsTest<br>Parameters: 2, Name (Z to A), SUCCESS</td>
+<td></td>
+<td>0</td>
+<td>testCases.ProductsTest@3af9c5b7</td></tr>
+<tr>
+<td title='testCases.CheckoutInformationTest.verifyCheckoutInformation()'><b>verifyCheckoutInformation</b><br>Test class: testCases.CheckoutInformationTest<br>Parameters: 1, Reshma, Rajan, 695001, SUCCESS</td>
+<td></td>
+<td>0</td>
+<td>testCases.CheckoutInformationTest@77f80c04</td></tr>
+<tr>
+<td title='testCases.CartTest.verifyRemoveProductFromMultipleProducts()'><b>verifyRemoveProductFromMultipleProducts</b><br>Test class: testCases.CartTest</td>
+<td></td>
+<td>11</td>
+<td>testCases.CartTest@24aed80c</td></tr>
+<tr>
+<td title='testCases.ProductsTest.verifyProductNameNavigation()'><b>verifyProductNameNavigation</b><br>Test class: testCases.ProductsTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.ProductsTest@3af9c5b7</td></tr>
+<tr>
+<td title='testCases.ProductsTest.verifyProductsURL()'><b>verifyProductsURL</b><br>Test class: testCases.ProductsTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.ProductsTest@3af9c5b7</td></tr>
+<tr>
+<td title='testCases.HamburgerTest.verifyLogout()'><b>verifyLogout</b><br>Test class: testCases.HamburgerTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.HamburgerTest@ed7f8b4</td></tr>
+<tr>
+<td title='testCases.LoginPageTest.verifyLogoDisplayed()'><b>verifyLogoDisplayed</b><br>Test class: testCases.LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.LoginPageTest@6ab778a</td></tr>
+<tr>
+<td title='testCases.ProductsTest.verifyNavigationToCartPage()'><b>verifyNavigationToCartPage</b><br>Test class: testCases.ProductsTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.ProductsTest@3af9c5b7</td></tr>
+<tr>
+<td title='testCases.HamburgerTest.verifyAllItems()'><b>verifyAllItems</b><br>Test class: testCases.HamburgerTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.HamburgerTest@ed7f8b4</td></tr>
+<tr>
+<td title='testCases.CheckoutCompleteTest.verifyBackHomeButton()'><b>verifyBackHomeButton</b><br>Test class: testCases.CheckoutCompleteTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.CheckoutCompleteTest@38102d01</td></tr>
+<tr>
+<td title='testCases.LoginPageTest.verifyLoginButtonEnabled()'><b>verifyLoginButtonEnabled</b><br>Test class: testCases.LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.LoginPageTest@6ab778a</td></tr>
+<tr>
+<td title='testCases.CartTest.verifyProductQuantity()'><b>verifyProductQuantity</b><br>Test class: testCases.CartTest<br>Parameters: 2, Sauce Labs Bike Light, $9.99, 1, SUCCESS</td>
+<td></td>
+<td>0</td>
+<td>testCases.CartTest@24aed80c</td></tr>
+<tr>
+<td title='testCases.CartTest.verifyCheckoutNavigation()'><b>verifyCheckoutNavigation</b><br>Test class: testCases.CartTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.CartTest@24aed80c</td></tr>
+<tr>
+<td title='testCases.CartTest.verifyRemoveProduct()'><b>verifyRemoveProduct</b><br>Test class: testCases.CartTest<br>Parameters: 2, Sauce Labs Bike Light, $9.99, 1, SUCCESS</td>
+<td></td>
+<td>11</td>
+<td>testCases.CartTest@24aed80c</td></tr>
+<tr>
+<td title='testCases.FooterTest.verifyLinkedinLink()'><b>verifyLinkedinLink</b><br>Test class: testCases.FooterTest</td>
+<td></td>
+<td>2</td>
+<td>testCases.FooterTest@4e3958e7</td></tr>
+<tr>
+<td title='testCases.CartTest.verifyProductQuantity()'><b>verifyProductQuantity</b><br>Test class: testCases.CartTest<br>Parameters: 1, Sauce Labs Backpack, $29.99, 1, SUCCESS</td>
+<td></td>
+<td>0</td>
+<td>testCases.CartTest@24aed80c</td></tr>
+<tr>
+<td title='testCases.LoginPageTest.verifyLogin()'><b>verifyLogin</b><br>Test class: testCases.LoginPageTest<br>Parameters: 2, invalid_user, wrong123, Epic sadface: Username and password do not match any user in this service</td>
+<td></td>
+<td>0</td>
+<td>testCases.LoginPageTest@6ab778a</td></tr>
+<tr>
+<td title='testCases.ProductsTest.verifyAddProductToCart()'><b>verifyAddProductToCart</b><br>Test class: testCases.ProductsTest<br>Parameters: 2, Sauce Labs Bike Light, SUCCESS</td>
+<td></td>
+<td>0</td>
+<td>testCases.ProductsTest@3af9c5b7</td></tr>
+<tr>
+<td title='testCases.LoginPageTest.verifyPasswordFieldAcceptsInput()'><b>verifyPasswordFieldAcceptsInput</b><br>Test class: testCases.LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.LoginPageTest@6ab778a</td></tr>
+<tr>
+<td title='testCases.ProductsTest.verifyProductDetailsDisplayed()'><b>verifyProductDetailsDisplayed</b><br>Test class: testCases.ProductsTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.ProductsTest@3af9c5b7</td></tr>
+<tr>
+<td title='testCases.CheckoutOverviewTest.verifyFinishButton()'><b>verifyFinishButton</b><br>Test class: testCases.CheckoutOverviewTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.CheckoutOverviewTest@37271612</td></tr>
+<tr>
+<td title='testCases.ProductsTest.verifyAddToCartButtonsDisplayed()'><b>verifyAddToCartButtonsDisplayed</b><br>Test class: testCases.ProductsTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.ProductsTest@3af9c5b7</td></tr>
+<tr>
+<td title='testCases.CartTest.verifyProductPrice()'><b>verifyProductPrice</b><br>Test class: testCases.CartTest<br>Parameters: 2, Sauce Labs Bike Light, $9.99, 1, SUCCESS</td>
+<td></td>
+<td>0</td>
+<td>testCases.CartTest@24aed80c</td></tr>
+<tr>
+<td title='testCases.CheckoutInformationTest.verifyCheckoutInformation()'><b>verifyCheckoutInformation</b><br>Test class: testCases.CheckoutInformationTest<br>Parameters: 4, Reshma, Rajan, , Error: Postal Code is required</td>
+<td></td>
+<td>0</td>
+<td>testCases.CheckoutInformationTest@77f80c04</td></tr>
+<tr>
+<td title='testCases.LoginPageTest.verifyPasswordPlaceholder()'><b>verifyPasswordPlaceholder</b><br>Test class: testCases.LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.LoginPageTest@6ab778a</td></tr>
+<tr>
+<td title='testCases.HamburgerTest.verifyResetAppState()'><b>verifyResetAppState</b><br>Test class: testCases.HamburgerTest</td>
+<td></td>
+<td>10</td>
+<td>testCases.HamburgerTest@ed7f8b4</td></tr>
+<tr>
+<td title='testCases.CheckoutOverviewTest.verifyProductQuantity()'><b>verifyProductQuantity</b><br>Test class: testCases.CheckoutOverviewTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.CheckoutOverviewTest@37271612</td></tr>
+<tr>
+<td title='testCases.CartTest.verifyProductPrice()'><b>verifyProductPrice</b><br>Test class: testCases.CartTest<br>Parameters: 3, Sauce Labs Bolt T-Shirt, $15.99, 1, SUCCESS</td>
+<td></td>
+<td>0</td>
+<td>testCases.CartTest@24aed80c</td></tr>
+<tr>
+<td title='testCases.CheckoutOverviewTest.verifyTaxDisplayed()'><b>verifyTaxDisplayed</b><br>Test class: testCases.CheckoutOverviewTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.CheckoutOverviewTest@37271612</td></tr>
+<tr>
+<td title='testCases.HamburgerTest.verifyCloseIcon()'><b>verifyCloseIcon</b><br>Test class: testCases.HamburgerTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.HamburgerTest@ed7f8b4</td></tr>
+<tr>
+<td title='testCases.LoginPageTest.verifyErrorMessageVisibility()'><b>verifyErrorMessageVisibility</b><br>Test class: testCases.LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.LoginPageTest@6ab778a</td></tr>
+<tr>
+<td title='testCases.CartTest.verifyCartPageDisplayed()'><b>verifyCartPageDisplayed</b><br>Test class: testCases.CartTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.CartTest@24aed80c</td></tr>
+<tr>
+<td title='testCases.HeaderTest.verifyHeader()'><b>verifyHeader</b><br>Test class: testCases.HeaderTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.HeaderTest@4c309d4d</td></tr>
+<tr>
+<td title='testCases.CartTest.verifyProductQuantity()'><b>verifyProductQuantity</b><br>Test class: testCases.CartTest<br>Parameters: 5, Sauce Labs Onesie, $7.99, 1, SUCCESS</td>
+<td></td>
+<td>0</td>
+<td>testCases.CartTest@24aed80c</td></tr>
+<tr>
+<td title='testCases.LoginPageTest.verifyLogin()'><b>verifyLogin</b><br>Test class: testCases.LoginPageTest<br>Parameters: 4, standard_user, , Epic sadface: Password is required</td>
+<td></td>
+<td>0</td>
+<td>testCases.LoginPageTest@6ab778a</td></tr>
+<tr>
+<td title='testCases.LoginPageTest.verifyUsernamePlaceholder()'><b>verifyUsernamePlaceholder</b><br>Test class: testCases.LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.LoginPageTest@6ab778a</td></tr>
+<tr>
+<td title='testCases.CartTest.verifyRemoveProduct()'><b>verifyRemoveProduct</b><br>Test class: testCases.CartTest<br>Parameters: 6, Test.allTheThings() T-Shirt (Red), $15.99, 1, SUCCESS</td>
+<td></td>
+<td>11</td>
+<td>testCases.CartTest@24aed80c</td></tr>
+<tr>
+<td title='testCases.CheckoutCompleteTest.verifyCheckoutCompletePage()'><b>verifyCheckoutCompletePage</b><br>Test class: testCases.CheckoutCompleteTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.CheckoutCompleteTest@38102d01</td></tr>
+<tr>
+<td title='testCases.CartTest.verifyProductPrice()'><b>verifyProductPrice</b><br>Test class: testCases.CartTest<br>Parameters: 4, Sauce Labs Fleece Jacket, $49.99, 1, SUCCESS</td>
+<td></td>
+<td>0</td>
+<td>testCases.CartTest@24aed80c</td></tr>
+<tr>
+<td title='testCases.ProductsTest.verifyProductImagesDisplayed()'><b>verifyProductImagesDisplayed</b><br>Test class: testCases.ProductsTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.ProductsTest@3af9c5b7</td></tr>
+<tr>
+<td title='testCases.ProductsTest.verifyAddProductToCart()'><b>verifyAddProductToCart</b><br>Test class: testCases.ProductsTest<br>Parameters: 3, Sauce Labs Bolt T-Shirt, SUCCESS</td>
+<td></td>
+<td>0</td>
+<td>testCases.ProductsTest@3af9c5b7</td></tr>
+<tr>
+<td title='testCases.HamburgerTest.verifyAbout()'><b>verifyAbout</b><br>Test class: testCases.HamburgerTest</td>
+<td></td>
+<td>6</td>
+<td>testCases.HamburgerTest@ed7f8b4</td></tr>
+<tr>
+<td title='testCases.CartTest.verifyProductQuantity()'><b>verifyProductQuantity</b><br>Test class: testCases.CartTest<br>Parameters: 3, Sauce Labs Bolt T-Shirt, $15.99, 1, SUCCESS</td>
+<td></td>
+<td>0</td>
+<td>testCases.CartTest@24aed80c</td></tr>
+<tr>
+<td title='testCases.CartTest.verifyProductQuantity()'><b>verifyProductQuantity</b><br>Test class: testCases.CartTest<br>Parameters: 4, Sauce Labs Fleece Jacket, $49.99, 1, SUCCESS</td>
+<td></td>
+<td>0</td>
+<td>testCases.CartTest@24aed80c</td></tr>
+<tr>
+<td title='testCases.LoginPageTest.verifyPasswordMasking()'><b>verifyPasswordMasking</b><br>Test class: testCases.LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.LoginPageTest@6ab778a</td></tr>
+<tr>
+<td title='testCases.ProductsTest.verifyAddProductToCart()'><b>verifyAddProductToCart</b><br>Test class: testCases.ProductsTest<br>Parameters: 5, Sauce Labs Onesie, SUCCESS</td>
+<td></td>
+<td>0</td>
+<td>testCases.ProductsTest@3af9c5b7</td></tr>
+<tr>
+<td title='testCases.CheckoutInformationTest.verifyContinueButton()'><b>verifyContinueButton</b><br>Test class: testCases.CheckoutInformationTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.CheckoutInformationTest@77f80c04</td></tr>
+<tr>
+<td title='testCases.CartTest.verifyProductQuantity()'><b>verifyProductQuantity</b><br>Test class: testCases.CartTest<br>Parameters: 6, Test.allTheThings() T-Shirt (Red), $15.99, 1, SUCCESS</td>
+<td></td>
+<td>0</td>
+<td>testCases.CartTest@24aed80c</td></tr>
+<tr>
+<td title='testCases.FooterTest.verifyTwitterLink()'><b>verifyTwitterLink</b><br>Test class: testCases.FooterTest</td>
+<td></td>
+<td>3</td>
+<td>testCases.FooterTest@4e3958e7</td></tr>
+<tr>
+<td title='testCases.ProductsTest.verifyProductSorting()'><b>verifyProductSorting</b><br>Test class: testCases.ProductsTest<br>Parameters: 3, Price (low to high), SUCCESS</td>
+<td></td>
+<td>0</td>
+<td>testCases.ProductsTest@3af9c5b7</td></tr>
+<tr>
+<td title='testCases.CheckoutInformationTest.verifyCancelButton()'><b>verifyCancelButton</b><br>Test class: testCases.CheckoutInformationTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.CheckoutInformationTest@77f80c04</td></tr>
+<tr>
+<td title='testCases.ProductsTest.verifyAddProductToCart()'><b>verifyAddProductToCart</b><br>Test class: testCases.ProductsTest<br>Parameters: 6, Test.allTheThings() T-Shirt (Red), SUCCESS</td>
+<td></td>
+<td>0</td>
+<td>testCases.ProductsTest@3af9c5b7</td></tr>
+<tr>
+<td title='testCases.ProductsTest.verifyProductSorting()'><b>verifyProductSorting</b><br>Test class: testCases.ProductsTest<br>Parameters: 1, Name (A to Z), SUCCESS</td>
+<td></td>
+<td>0</td>
+<td>testCases.ProductsTest@3af9c5b7</td></tr>
+<tr>
+<td title='testCases.CartTest.verifyContinueShopping()'><b>verifyContinueShopping</b><br>Test class: testCases.CartTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.CartTest@24aed80c</td></tr>
+<tr>
+<td title='testCases.ProductsTest.verifyAddProductToCart()'><b>verifyAddProductToCart</b><br>Test class: testCases.ProductsTest<br>Parameters: 1, Sauce Labs Backpack, SUCCESS</td>
+<td></td>
+<td>0</td>
+<td>testCases.ProductsTest@3af9c5b7</td></tr>
+<tr>
+<td title='testCases.CartTest.verifyMultipleProducts()'><b>verifyMultipleProducts</b><br>Test class: testCases.CartTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.CartTest@24aed80c</td></tr>
+<tr>
+<td title='testCases.ProductsTest.verifyAddProductToCart()'><b>verifyAddProductToCart</b><br>Test class: testCases.ProductsTest<br>Parameters: 4, Sauce Labs Fleece Jacket, SUCCESS</td>
+<td></td>
+<td>0</td>
+<td>testCases.ProductsTest@3af9c5b7</td></tr>
+<tr>
+<td title='testCases.CheckoutOverviewTest.verifyProductPrice()'><b>verifyProductPrice</b><br>Test class: testCases.CheckoutOverviewTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.CheckoutOverviewTest@37271612</td></tr>
+<tr>
+<td title='testCases.LoginPageTest.verifyLoginButtonText()'><b>verifyLoginButtonText</b><br>Test class: testCases.LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.LoginPageTest@6ab778a</td></tr>
+<tr>
+<td title='testCases.CartBadgeTest.verifyCartBadgeCount()'><b>verifyCartBadgeCount</b><br>Test class: testCases.CartBadgeTest</td>
+<td></td>
+<td>10</td>
+<td>testCases.CartBadgeTest@37883b97</td></tr>
+<tr>
+<td title='testCases.LoginPageTest.verifyLogin()'><b>verifyLogin</b><br>Test class: testCases.LoginPageTest<br>Parameters: 1, standard_user, secret_sauce, SUCCESS</td>
+<td></td>
+<td>0</td>
+<td>testCases.LoginPageTest@6ab778a</td></tr>
+<tr>
+<td title='testCases.CartTest.verifyRemoveProduct()'><b>verifyRemoveProduct</b><br>Test class: testCases.CartTest<br>Parameters: 3, Sauce Labs Bolt T-Shirt, $15.99, 1, SUCCESS</td>
+<td></td>
+<td>11</td>
+<td>testCases.CartTest@24aed80c</td></tr>
+<tr>
+<td title='testCases.ProductsTest.verifyAllProductsDisplayed()'><b>verifyAllProductsDisplayed</b><br>Test class: testCases.ProductsTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.ProductsTest@3af9c5b7</td></tr>
+<tr>
+<td title='testCases.CheckoutOverviewTest.verifySubtotalDisplayed()'><b>verifySubtotalDisplayed</b><br>Test class: testCases.CheckoutOverviewTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.CheckoutOverviewTest@37271612</td></tr>
+<tr>
+<td title='testCases.ProductsTest.verifyProductSorting()'><b>verifyProductSorting</b><br>Test class: testCases.ProductsTest<br>Parameters: 4, Price (high to low), SUCCESS</td>
+<td></td>
+<td>0</td>
+<td>testCases.ProductsTest@3af9c5b7</td></tr>
+<tr>
+<td title='testCases.CartTest.verifyRemoveProduct()'><b>verifyRemoveProduct</b><br>Test class: testCases.CartTest<br>Parameters: 4, Sauce Labs Fleece Jacket, $49.99, 1, SUCCESS</td>
+<td></td>
+<td>11</td>
+<td>testCases.CartTest@24aed80c</td></tr>
+<tr>
+<td title='testCases.CheckoutInformationTest.verifyCheckoutInformation()'><b>verifyCheckoutInformation</b><br>Test class: testCases.CheckoutInformationTest<br>Parameters: 3, Reshma, , 695001, Error: Last Name is required</td>
+<td></td>
+<td>0</td>
+<td>testCases.CheckoutInformationTest@77f80c04</td></tr>
+<tr>
+<td title='testCases.CartTest.verifyProductPrice()'><b>verifyProductPrice</b><br>Test class: testCases.CartTest<br>Parameters: 5, Sauce Labs Onesie, $7.99, 1, SUCCESS</td>
+<td></td>
+<td>0</td>
+<td>testCases.CartTest@24aed80c</td></tr>
+<tr>
+<td title='testCases.CartTest.verifyRemoveProduct()'><b>verifyRemoveProduct</b><br>Test class: testCases.CartTest<br>Parameters: 5, Sauce Labs Onesie, $7.99, 1, SUCCESS</td>
+<td></td>
+<td>11</td>
+<td>testCases.CartTest@24aed80c</td></tr>
+<tr>
+<td title='testCases.ProductsTest.verifyProductsPageDisplayed()'><b>verifyProductsPageDisplayed</b><br>Test class: testCases.ProductsTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.ProductsTest@3af9c5b7</td></tr>
+</table><p>
+</body>
+</html>
